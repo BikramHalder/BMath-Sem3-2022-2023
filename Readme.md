@@ -1,6 +1,6 @@
 # BMath-Sem3-2022-2023
 
-Repository of resources for Semester 1 of B. Math 1st Year students (2021-'22) at [Indian Statistical Institute, Bangalore](https://www.isibang.ac.in).
+Repository of resources for Semester 3 of B. Math 2nd Year students (2022-'23) at [Indian Statistical Institute, Bangalore](https://www.isibang.ac.in).
 
 ## Courses Available
 
@@ -25,7 +25,7 @@ git clone https://github.com/BikramHalder/BMath-Sem3-2022-2023
 git pull
 ```
 
-You can always [download the whole repo as a zip](https://github.com/BikramHalder/BMath-Sem1-2021--22/archive/refs/heads/master.zip)
+You can always [download the whole repo as a zip](https://github.com/BikramHalder/BMath-Sem3-2022-2023/archive/refs/heads/master.zip)
 
 *Tip for Windows Users:* 
 
