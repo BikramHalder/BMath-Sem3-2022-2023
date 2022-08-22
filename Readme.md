@@ -5,9 +5,9 @@ Repository of resources for Semester 3 of B. Math 2nd Year students (2022-'23) a
 ## Courses Available
 
 - [X] [Analysis III](Analysis-3)
-- [ ] Discrete Mathematics I
-- [ ] Physics I (Classical Mechanics)
-- [ ] Algrbra III (Group Theory)
+- [ ] Discrete Mathematics I (Graph Theory & Combinatorics)
+- [X] [Physics I (Classical Mechanics)](Physics-1)
+- [X] [Algebra III (Group Theory)](Algebra-3)
 - [ ] Statistics II
 
 ## How to Use?
