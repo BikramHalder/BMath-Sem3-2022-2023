@@ -1,0 +1,11 @@
+\begin{soln}{10}
+  Let, $ f = (f_1,\ldots,f_n) $. So, $ Df(t) = (f_1',\ldots,f_n') $.
+   \\ 
+   For $ t \in (a,b) $, \begin{align*}
+    \frac{d}{dt}(\norm{f(t)}^2) 
+    &= \frac{d}{dt}\sum_{i=1}^{n}(f_i(t))^2  \\ 
+    &= \sum_{i=1}^{n}\frac{d}{dt}(f_i(t))^2  \\ 
+    &= 2\sum_{i=1}^{n}f_i(t)f_i'(t)  \\ 
+    &= 2\inp{f(t)}{Df(t)}
+   \end{align*}
+\end{soln}

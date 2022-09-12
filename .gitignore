@@ -1,2 +1,13 @@
 bikram*
+
 .R*
+*_latexmk
+*.fls
+*.log
+*.out
+*.gz
+*.tar
+*.aux
+
+
+Analysis-3/HW-Solutions/HW1

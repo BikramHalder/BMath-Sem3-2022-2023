@@ -1,0 +1,21 @@
+\begin{soln}{3}
+   Derivative of given $ f $ exists iff derivative of each component of $ f $ exists which is true because polynomial and exponential functions are \diff on $ \R $ and differentiation is closed under multiplication. So, the derivative of $ f $ at $ (x,y,z,w) \in \R^4 $ is
+   \begin{align*}
+    [(Df)(x,y,z,w)] 
+    &= \begin{bmatrix}
+      \frac{\partial}{\partial x}(xe^y) &\frac{\partial}{\partial y}(xe^y) &\frac{\partial}{\partial z}(xe^y) &\frac{\partial}{\partial w}(xe^y) \\ 
+      \frac{\partial}{\partial x}(ze^{-w}) &\frac{\partial}{\partial y}(ze^{-w}) &\frac{\partial}{\partial z}(ze^{-w}) &\frac{\partial}{\partial w}(ze^{-w}) \\ 
+      \frac{\partial}{\partial x}(e^x) &\frac{\partial}{\partial y}(e^x) &\frac{\partial}{\partial z}(e^x) &\frac{\partial}{\partial w}(e^x)
+    \end{bmatrix} \\ 
+    &= \begin{bmatrix}
+      e^y & xe^y & 0 & 0 \\ 
+      0 & 0 & e^{-w} & -ze^{-w} \\ 
+      e^x & 0 & 0 & 0
+    \end{bmatrix} \\
+    \implies [(Df)(0,-\ln6,\ln2,1)] &= \begin{bmatrix}
+      \frac{1}{6} & 0 & 0 & 0 \\ 
+      0 & 0 & \frac{1}{e} & \frac{-\ln2}{e} \\ 
+      1 & 0 & 0 & 0
+    \end{bmatrix}
+   \end{align*}
+\end{soln}

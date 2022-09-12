@@ -1,0 +1,28 @@
+\begin{soln}{4}
+For, $ \epsilon > 0 $ take $ \delta = \sqrt[4]{\epsilon} $. Then, $ (x,y) \in D_{\delta}((0,0)) \implies \Abs{\frac{x^2y^4}{x^2+y^2}-0} < y^4 < (x^2+y^2)^2 < \delta^4 = \epsilon $. So, $ f $ is \cts at $ (0,0) $ and hence on $ \R^2 $.
+ \\ 
+\begin{align*}
+  \lim_{(x,y) \to (0,0)} \frac{\Abs{f(x,y)-f(0,0)-(0,0)\cdot (x,y)}}{\norm{(x,y)}}
+  &= \lim_{(x,y) \to (0,0)} \frac{\Abs{ \frac{x^2y^4}{x^2+y^2} }}{\sqrt{x^2+y^2}}
+\end{align*}
+For $ \epsilon > 0 $ take $ \delta = \sqrt[3]{\epsilon} $. So, $ (x,y) \in D_{\delta}((0,0)) \implies \Abs{ \frac{x^2y^4}{(x^2+y^2)^{\frac{3}{2}}} } = x^2|y|\Abs{ \frac{ |y|^3}{(x^2+y^2)^{\frac{3}{2}}} } < x^2|y| < \delta^3 = \epsilon $
+ \\ 
+Thus, the limit above is $ 0 $ and hence $ f $ is \diff at $ (0,0) $ with $ (Df)((0,0)) = (0,0) $.
+ \\ 
+Now define, $ g:\R^2 \to \R $ and $ h:\R^2 \to \R $ with \begin{align*}
+    g(x,y) &= \begin{cases}
+      \frac{2xy^6}{(x^2+y^2)^2} &\text{ if } (x,y)\not=(0,0) \\ 
+      0 &\text{ if } (x,y)=(0,0) \\ 
+    \end{cases} \\ 
+    h(x,y) &= \begin{cases}
+      \frac{2x^2y^3(2x^2+y^2)}{(x^2+y^2)^2} &\text{ if } (x,y)\not=(0,0) \\ 
+      0 &\text{ if } (x,y)=(0,0) \\ 
+    \end{cases}
+   \end{align*}
+   We will show that both $ g $ and $ h $ are \cts. We already have $ f,g $ being rational functions, are \cts  on $ \left\{ (0,0) \right\}^c $.
+   \begin{itemize}
+    \item For, $ \epsilon_g > 0 $ take $ \delta_g = \sqrt[3]{\frac{\epsilon_g}{2}} $. Then,  $ (x,y) \in D_{\delta_g}((0,0)) \implies \Abs{\frac{2xy^6}{(x^2+y^2)^2}-0} < 2|x|y^2 < 2\delta_g\cdot \delta_g^2 = \epsilon $. Thus, $ g $ is \cts at $ (0,0) $ and hence on $ \R^2 $.
+    \item For, $ \epsilon_h > 0 $ take $ \delta_h = \sqrt[3]{\frac{\epsilon_h}{4}} $. Then,  $ (x,y) \in D_{\delta_h}((0,0)) \implies \Abs{\frac{2x^2y^3(2x^2+y^2)}{(x^2+y^2)^2}-0} < 2|y|(2x^2+y^2) < 2\delta_h(\delta_h^2 + \delta_h^2) = \epsilon $. Thus, $ h $ is \cts at $ (0,0) $ and hence on $ \R^2 $.
+   \end{itemize}
+   Indeed, $ g = f_x $ and $ h = f_y $ which shows that $ f \in C^{1}(\R^2) $.
+\end{soln}

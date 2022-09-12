@@ -1,0 +1,18 @@
+\clearpage
+\begin{soln}{8}
+   \begin{align*}
+    J_{f}(x,y,z) 
+    &= \begin{bmatrix}
+      1 & 1 & 1 \\ 
+      2x & 2y & 2z \\ 
+      3x^2 & 3y^2 & 3z^2
+    \end{bmatrix} \\ 
+    \text{So, } \det(J_f(x,y,z)) 
+    &= \Abs{\begin{matrix}
+      1 & 1 & 1 \\ 
+      2x & 2y & 2z \\ 
+      3x^2 & 3y^2 & 3z^2
+    \end{matrix}} = 12(x-y)(y-z)(z-x)
+   \end{align*}
+   Clearly, $ J_{f}(x,y,z)  $ is non-singular unless two of the three variables are equal. And, the locus of the singularities $ = \left\{ (x,y,z) \in \R^3 : x=y \text{ or } y=z \text{ or } z=x \right\} $  which is just union of three planes, $ x=y, y=z $ and $ z=x $ in $ \R^3 $.
+\end{soln}

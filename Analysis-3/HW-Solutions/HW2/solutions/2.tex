@@ -1,0 +1,13 @@
+% \clearpage
+\begin{soln}{2}
+   Let, $ \mO_n \subseteq \R^n $ be a convex set. $ f:\mO_n \to \R^m $ be a \diff function having bounded partial derivatives. Let, $ f = (f_1,\ldots,f_m) $. So, partial derivatives of each $ f_i $ is bounded, hence the norm of gradient of each $ f_i $ is bounded. Let, $ M = 1+\max_{i\in [n]}\left\{ \sup_{\mO_n} \norm{\grad f_i} \right\}$. Let, $ a,b \in \mO_n $.  By Multivariate Mean Value Theorem, for each $i \ \exists \: c_i \in \left\{ tb+(1-t)a : t \in [0,1] \right\} $ such that $ f_i(b) - f_i(a) = (\grad f_i)(c_i) \cdot (b-a) $. For, $ \epsilon > 0 $ take $ \delta = \frac{\epsilon}{M} $. Then, $ \norm{a-b} < \delta $ yields,
+   \begin{align*}
+    \norm{f(b)-f(a)}
+    &= \sqrt{\sum_{i=1}^{m}\left( f_i(b)-f_i(a) \right)^2} \\ 
+    &= \sqrt{\sum_{i=1}^{m}\left( (\grad f_i)(c_i) \cdot (b-a) \right)^2} \\ 
+    &\leq \sqrt{\sum_{i=1}^{m}\norm{(\grad f_i)(c_i)}^2\norm{b-a}^2} \tag{By Cauchy-Schwarz inequaity} \\ 
+    &= \norm{b-a}\sqrt{\sum_{i=1}^{m}\norm{(\grad f_i)(c_i)}^2} \\ 
+    &< \delta M = \epsilon
+   \end{align*}
+   Hence, $ f $ is uniformly \cts which is even true for $ n=2 $.
+\end{soln}

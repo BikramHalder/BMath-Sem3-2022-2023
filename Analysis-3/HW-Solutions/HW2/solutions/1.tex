@@ -1,0 +1,26 @@
+\begin{soln}{1}
+   Let, $ \left\{ e_i \right\}_{i=1}^n $ be the standard ordered basis of $ \R^n $. Let, $ a \in \R^n $. Fix, $ i \in [n] $  \\ 
+   Define, for some $ \delta > 0 $, $ \eta_i : (-\delta,\delta) \to \R^n $ with $ \eta_i(t) = a+te_i$
+  \\ 
+  Then,
+   \begin{align*}
+    \lim_{t \to 0^+} \frac{f(\eta_i(t)) - f(a)}{t} 
+    &= \lim_{t \to 0^+} \frac{\Abs{a_i+t} - \Abs{a_i}}{t} \\ 
+    &= \begin{cases}
+      \ \ 1 & \text{ if } a_i > 0  \\ 
+      -1 & \text{ if } a_i < 0  \\ 
+      \ \ 1 & \text{ if } a_i = 0
+    \end{cases}
+   \end{align*}
+   And,
+   \begin{align*}
+    \lim_{t \to 0^-} \frac{f(\eta_i(t)) - f(a)}{t} 
+    &= \lim_{t \to 0^-} \frac{\Abs{a_i+t} - \Abs{a_i}}{t} \\ 
+    &= \begin{cases}
+      \ \ 1 & \text{ if } a_i > 0  \\ 
+      -1 & \text{ if } a_i < 0  \\ 
+      -1 & \text{ if } a_i = 0
+    \end{cases}
+   \end{align*}
+   Therefore, $ \frac{\partial f}{\partial x_i} $ exist for every $ a \in \R^n-\left\{ x \in \R^n : x_i = 0 \right\} $. Hence, $ f $ is differentiable only at $ \R^n-\bigcup_{i=1}^n \left\{ x \in \R^n : x_i = 0 \right\} $ 
+\end{soln}

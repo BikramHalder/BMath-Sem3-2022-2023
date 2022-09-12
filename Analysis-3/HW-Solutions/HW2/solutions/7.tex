@@ -1,0 +1,6 @@
+\begin{soln}{7}
+  Let, $ f:\R^n \to \R^n $ be a differentiable mapping whose total derivative is a diagonal matrix (w.r.t. standard ordered basis).
+    \\ 
+  $ \forall \: x,y \in \R^n, tx+(1-t)y \in \R^n \ \forall t \in [0,1] $ which implies that $ \R^n $ is convex. \\ 
+  Fix, $ j\in [n] $. Let, $ a,b \in \R^n $. Then, by Multivariate Mean Value Theorem, $\exists \: c_j \in \left\{ tb+(1-t)a : t \in [0,1] \right\} $ such that $ f_j(b) - f_j(a) = (\grad f_j)(c_j) \cdot (b-a) $. Since, total derivative of $ f $ is a diagonal matrix, $ \frac{\partial f_j}{\partial x_i}(c_j) = 0 \ \forall i \in [n]-\{j\}$ which implies $ f_j(b) - f_j(a) = (b_j-a_j)\frac{\partial f_j}{\partial x_j}(c_j) $. For all such $ a,b \in \R^n $ whose $ j^{th} $ coordinates are same, $ f_i(b) - f_i(a) = 0 $ which shows that, $ f_i $ is independent of $ x_j \ \forall i \in [n]-\{j\}$.Therefore, each $ f_i $ is function of $ x_i $, and hence the mappings of the form $ f:\R^n \to \R^n $ such that $ f(x)=(f_1(x_1),\ldots,f_n(x_n)) $ with each $ f_i $ differentiable, yields a diagonal matrix (w.r.t. standard ordered basis) in total derivative.
+\end{soln}

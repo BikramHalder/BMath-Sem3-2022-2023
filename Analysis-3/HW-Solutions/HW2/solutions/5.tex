@@ -1,0 +1,16 @@
+\begin{soln}{5}
+   \textbf{(This question is wrong!)}
+    \\ 
+    \begin{align*}
+       \lim_{(x,y) \to (0,0)} \frac{\Abs{f(x,y)-f(0,0)-(0,0)\cdot (x,y)}}{\norm{(x,y)}}
+       &= \lim_{(x,y) \to (0,0)} \frac{\Abs{x^3\sin{\frac{1}{x}}}}{\sqrt{x^2+y^2}}
+    \end{align*}
+    For $ \epsilon > 0 $ take $ \delta = \sqrt{\epsilon} $. So, $ (x,y) \in D_{\delta}((0,0)) \implies \frac{\Abs{x^3\sin{\frac{1}{x}}}}{\sqrt{x^2+y^2}} < x^2 < \delta^2 = \epsilon $. Thus, the limit above is $ 0 $ and hence $ f $ is \diff at $ (0,0) $ with $ (Df)((0,0)) = (0,0) $. Therefore,
+    \begin{align*}
+       f_x(x,y) =  \begin{cases}
+        3x^2\sin{\frac{1}{x}} - x\cos{\frac{1}{x}} & \text{ if } (x,y) \not = 0 \\ 
+        0 & \text{ if } (x,y) = 0
+       \end{cases}
+    \end{align*}
+    For $ \epsilon' > 0 $ take $ \delta' = \frac{\sqrt{12\epsilon'+1}-1}{6} > 0 $. So, $ (x,y) \in D_{\delta'}((0,0)) \implies \Abs{3x^2\sin{\frac{1}{x}} - x\cos{\frac{1}{x}}} < 3x^2+|x| < 3\delta'^2+\delta' = \epsilon' $. Hence, $ f_x $ is \cts at $ (0,0) $.
+\end{soln}
