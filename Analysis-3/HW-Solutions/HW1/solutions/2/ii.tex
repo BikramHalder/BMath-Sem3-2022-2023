@@ -1,0 +1,24 @@
+We claim the following:
+\begin{claim}\label{clm1:2}
+  For $ p = (p_1, \ldots, p_n) \in S^{n-1}_1(0), \exists q \in S^{n-1}_1(0)$ such that $ \inp{p}{q} = 0 $
+\end{claim}
+\begin{proof}[Proof of the claim]
+  Since, $ \norm{p}^2 = \sum_{j=1}^{n} p_j^2 =1 $, $ \exists k \in \{1,\ldots,n\} $ such that $ p_k \not= 0 $. For, $ q=(q_1,\ldots,q_n) $ take $ q_k = -\frac{1}{p_k}\sum_{\stackrel{ j=1 }{ j \not= k }}^{n} p_jq_j $ then we get $\inp{p}{q} = \sum_{j=1}^{n}p_jq_j = 0$
+\end{proof}
+
+For, $ x \in S^{n-1}_1(0) $ take $ x_{\perp} \in S^{n-1}_1(0) $ such that $ \inp{x}{x_{\perp}} = 0 $. Define a sequence, $ \{x_m\} \subset S^{n-1}_1(0) $ with $ x_m = \left(\cos\left(\frac{1}{m}\right)\right)x + \left(\sin\left(\frac{1}{m}\right)\right)x_{\perp} $ 
+\\
+$
+\left( \text{We should see},
+  \norm{x_m}^2 
+  = \norm{x}^2\cos^2\left(\frac{1}{m}\right) 
+  + \norm{x_\perp}^2\sin^2\left(\frac{1}{m}\right) 
+  + 2\inp{\left(\cos\left(\frac{1}{m}\right)\right)x}{\left(\sin\left(\frac{1}{m}\right)\right)x_{\perp}} 
+  = 1
+\right)$.
+\\
+Clearly, $ x_m \to x $. Thus, $ S^{n-1}_1(0) \subset L(S^{n-1}_1(0)) $ 
+\\
+Now, take $ x \in (S^{n-1}_1(0))^c $, so $ \norm{x} \not= 1 $ . Let, $ \{x_m\} \subset S^{n-1}_1(0) $ be a sequence converging to $ x $. Take, $ \epsilon = \frac{\Abs{1 - \norm{x}}}{2} $  Then, $ \forall m,$ with inequality $ \ref{ineq3:1}, \norm{x_m-x} \geq \Abs{\norm{x_m}-\norm{x}} = \Abs{1 - \norm{x}} > \epsilon $ \Contra
+\\
+Therefore, $ S^{n-1}_1(0) = L(S^{n-1}_1(0)) $ $\QEd$

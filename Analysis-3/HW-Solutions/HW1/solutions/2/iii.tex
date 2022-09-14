@@ -1,0 +1,40 @@
+Let, $ A^k := \Q^k \cap (0,1)^k, k \in \N $ 
+\\
+For, $ z=(x,y) \in (0,1)^2 $, the sequence $ \{z_m\} \subset A^2 $ defined by, $ z_m = \left( 
+  \frac{\floor{10^{m-1}x}}{10^{m-1}},
+  \frac{\floor{10^{m-1}y}}{10^{m-1}}
+ \right) $ 
+converges to $ z $.
+\\
+The sequences $ \{z_m\} \subset A^2 $ defined by,
+\begin{itemize}
+  \item $ z_m = \left(\frac{\floor{10^{m-1}x}}{10^{m-1}},\frac{1}{m}\right) $ converges to $(x,0)$ for any $ x \in A^1 $
+  \item $ z_m = \left(\frac{\floor{10^{m-1}x}}{10^{m-1}},1-\frac{1}{m}\right) $ converges to $(x,1)$ for any $ x \in A^1 $
+  \item $ z_m = \left(\frac{1}{m}, \frac{\floor{10^{m-1}y}}{10^{m-1}}\right) $ converges to $(0,y)$ for any $ y \in A^1 $
+  \item $ z_m = \left(1-\frac{1}{m}, \frac{\floor{10^{m-1}y}}{10^{m-1}}\right) $ converges to $(1,y)$ for any $ y \in A^1 $
+  \item $ z_m = \left(\frac{1}{m},\frac{1}{m}\right) $ converges to $(0,0)$
+  \item $ z_m = \left(1-\frac{1}{m},\frac{1}{m}\right) $ converges to $(1,0)$
+  \item $ z_m = \left(\frac{1}{m},1-\frac{1}{m}\right) $ converges to $(0,1)$
+  \item $ z_m = \left(1-\frac{1}{m},1-\frac{1}{m}\right) $ converges to $(1,1)$
+\end{itemize}
+
+Therefore, $ [0,1]^2 \subseteq L(A^2) $ 
+
+\begin{claim}\label{clm2:2:3}
+  For, $ z \in ([0,1]^2)^c $ and $ \forall z' \in A^2, \ \exists \ \delta >0$  such that $ \norm{z-z'}>\delta $ 
+\end{claim}
+\begin{proof}[Proof of the claim]
+  Let, $ z = (x,y) \in [0,1]^2 $
+  \\
+  For, 
+  \begin{itemize}
+    \item[$\circ$] $ x > 1 \ {\rm or} \ y > 1 $, take $ \delta = \min{ \left\{ 
+      \frac{\Abs{x-1}}{2}, \frac{\Abs{y-1}}{2}
+     \right\} }$ 
+    \item[$\circ$] $ x < 0 \ {\rm or} \ y < 0 $, take $ \delta = \min{ \left\{ 
+      \frac{\Abs{x}}{2}, \frac{\Abs{y}}{2}
+     \right\} }$
+  \end{itemize}
+\end{proof}
+So by the Claim $ (\ref{clm2:2:3}) $ we conclude that no point in $ ([0,1]^2)^c $ is a limit point of $ A^2 $ \\
+Thus, $ [0,1]^2 = L(A^2) $

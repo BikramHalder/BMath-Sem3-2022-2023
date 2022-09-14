@@ -1,0 +1,13 @@
+\begin{soln}{4}
+  Define, $ h:\R^2 \to \R $ with $ h(x,y) = xy $. Let $ (a,b) \in \R^2 $ for $ \epsilon >0 $ take, $ \delta = \sqrt{4\epsilon + (\Abs{a}+\Abs{b})^2} - (\Abs{a}+\Abs{b}) > 0 $. Then, $ (x,y) \in B_{\frac{\delta}{2}}((a,b)) $ which gives $ \Abs{y-b} < \frac{\delta}{2}, \Abs{x-a} < \frac{\delta}{2} $. So, 
+  \begin{align*}
+    \Abs{ h(x,y) - h(a,b) }
+    &= \Abs{ xy-ab } \\
+    &= \Abs{xy-ab+xb-xb} \\ 
+    &\leq \Abs{x}\Abs{y-b} + \Abs{b}\Abs{x-a} \\
+    &= \Abs{x-a + a}\Abs{y-b} + \Abs{b}\Abs{x-a} \\
+    &\leq \Abs{x-a}\Abs{y-b} + \Abs{a}\Abs{y-b} + \Abs{b}\Abs{x-a} \\
+    &< \frac{\delta^2}{4} + (\Abs{a}+\Abs{b}){\frac{\delta}{2}} = \epsilon
+  \end{align*}
+  Thus, $ h $ is \cts at $ (a,b) $. Since, $ f = g \circ h $ and composition of 2 real valued \cts function is \cts, we get that $ f $ is \cts.
+\end{soln}

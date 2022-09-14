@@ -1,0 +1,6 @@
+For $ x \in B_{r}(a) $, let $ \{x_m\} \subseteq B_r(a) $  be a sequence with $ x_m = \frac{x}{m}+\left(1-\frac{1}{m}\right)a $ which converges to $ x $. Since, $ x $ is arbitary, we get $ B_r(a) \subset L(B_r(a)) $. For $ s \in S^{n-1}_r(a) $ the sequence $ \{y_m\} \subseteq B_r(a) $ with $ y_m = \frac{s}{m}+\left(1-\frac{1}{m}\right)a $ converges to $ s $ which implies $  S^{n-1}_r(a) \subset L(B_r(a))$. 
+\\
+But, for $ x \in (B_r(a) \cup S^{n-1}_r(a))^c $ we have $ \norm{x-a} > r $. Assume that $ \exists $ a sequence $ \{x_m\} \subseteq B_r(a) $ converging to $ x $. Take, $ \epsilon = r $. Then, $ \forall \ m$, with inequality $ (\ref{ineq3:1}) $ \\ 
+$\norm{x-y_m} = \norm{(x-a)-(y_m-a)} \geq \Abs{\norm{x-a} - \norm{y_m-a}} > r + r > \epsilon $ \Contra
+\\
+Hence, $L(B_r(a)) = B_r(a) \cup S^{n-1}_r(a)$ $ \QEd $ 

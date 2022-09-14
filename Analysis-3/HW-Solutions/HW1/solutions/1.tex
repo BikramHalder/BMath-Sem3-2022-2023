@@ -1,0 +1,15 @@
+\begin{soln}{1}
+  For, $x, y \in \R^n$, $\norm{x-y} = \norm{x + (-y)} \leq \norm{x} + \norm{-y} = \norm{x} + \norm{y}$ \\
+  Also, $\norm{y} = \norm{x+y-x} \leq \norm{x}+\norm{y-x}=\norm{x}+\norm{x-y}$
+  \begin{align}\label{ineq1:1}
+    \thatis -\norm{x-y} \leq \norm{x}-\norm{y}
+  \end{align}
+  Again, $\norm{x} = \norm{x-y+y} \leq \norm{x-y}+\norm{y}$
+  \begin{align}\label{ineq2:1}
+    \thatis \norm{x}-\norm{y} \leq \norm{x-y}
+  \end{align}
+  Thus, by $ \ref{ineq1:1} $ and $ \ref{ineq2:1} $, we get 
+  \begin{align}\label{ineq3:1}
+    \Abs{\norm{x}-\norm{y}} \leq \norm{x-y}
+  \end{align}
+\end{soln}

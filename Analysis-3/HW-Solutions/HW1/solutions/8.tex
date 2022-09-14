@@ -1,0 +1,8 @@
+\begin{soln}{8}
+  \begin{itemize}
+    \item[$ \impliedby: $]
+          Assume that each $ \Pi_i f $ is uniformly \cts. Let, $ a, b \in \R^n $.  For, $ \epsilon > 0 $ take $ \delta >0 $ such that $ \Abs{\Pi_i f(a) - \Pi_i f(b)} < \frac{\epsilon}{\sqrt n} \ \forall \ \norm{a-b} < \delta $ for every $ i $ . Then, $ \norm{a-b} < \delta $  implies $ \norm{f(a)-f(b)} = \sqrt{\sum_{i=1}^{n} \left(\Pi_i f(a) - \Pi_i f(b)\right)^2} < \epsilon $ which implies, $ f $ is uniformly \cts.
+    \item[$ \implies: $]
+          Assume that, $ f $ is uniformly \cts. Let, $ a, b \in \R^n $. Then, for $ \epsilon > 0, \exists \delta >0 $ such that $ \norm{a-b} < \delta $ gives $ \norm{f(a)-f(b)} < \epsilon $ which implies, $ \Abs{\Pi_i f(a) - \Pi_i f(b)} < \epsilon \ \forall i $ \thatis each $ \Pi_i f $ is uniformly \cts.
+  \end{itemize}
+\end{soln}
